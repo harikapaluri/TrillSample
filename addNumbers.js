@@ -6,8 +6,8 @@ const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 var router = express.Router();
 
-// GET /questions
-//Route for AddNumbera
+// POST Request for Adding Numbers
+//Route for AddNumbers
 router.post("/",
 [
 body("firstNumber").notEmpty().withMessage("Value is required").isInt().withMessage("Invalid Number value"),
