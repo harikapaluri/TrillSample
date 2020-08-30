@@ -7,7 +7,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 var router = express.Router();
 
 // GET /questions
-// Route for questions collection
+//Route for AddNumbera
 router.post("/",
 [
 body("firstNumber").notEmpty().withMessage("Value is required").isInt().withMessage("Invalid Number value"),
